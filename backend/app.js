@@ -9,6 +9,8 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
+require('./config/database')
+
 dotenv.config()
 
 app.use(morgan('combined', { stream: winston.stream }));
